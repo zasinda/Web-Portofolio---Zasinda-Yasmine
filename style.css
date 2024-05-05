@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.9rem;
+}
+
+* {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0;
+}
+
+/* button */
+button {
+    padding: 0.5rem;
+    background: #f89999;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+
+/* logo dan navbar menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0,2s ease-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: black;
+}
+
+nav ul li a{
+    padding: 10px; 
+    color: black;
+    text-decoration: none;
+}
+
+/* Home Section */
+#home {
+    padding: 70px; 
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#home p {
+    color: #45505b;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+#home p span {
+    color: #ed6e6e;
+    letter-spacing: 1px;
+  }
+
+.home-name {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0,5rem 0 1rem;
+    color: black;
+}
+
+.home-right img {
+    width: 400px;
+    border-radius: 0.7rem;
+    margin-right: -40%;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem 3rem 5rem;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
+  
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFB1B1;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+.section-title p {
+    margin-bottom: 0;
+  }
+
+/* About section */
+#about {
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+/* layout */
+.grid-3 {
+    padding: 70px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #FFB1B1;
+    border-radius: 0.7rem;
+}
+
+.about h4 {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.about p {
+    color: black;
+}
+
+.about-icon {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+/* End of About */
+
+/* skills section */
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #f2f3f5;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #FFB1B1;
+  }
+ 
+  /* end of skills */
+
+  /* Resume section */
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ed6e6e;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ed6e6e;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #ed6e6e;
+  }
+
+/* Contact section */
+#contact {
+    background-color: white; 
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: auto;
+    width: 80%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Poppins", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: gray;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-submit {
+    width: 80%;
+    padding: 0.5rem;
+    background: black;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #ed6e6e;
+    color: black;
+}
+/* End Of Contact */
+
+/* Footer */
+footer {
+    background: #f7f8f9;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background:  #ed6e6e;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background:  #ed6e6e;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
